@@ -2,5 +2,16 @@ name = "mastra-worker"
 main = ".mastra/output/index.mjs"
 compatibility_date = "2025-08-21"
 compatibility_flags = ["nodejs_compat", "nodejs_compat_populate_process_env"]
+
+
 [build]
 command = "npm run build"
+watch_dir = ".mastra/output"
+
+[env.production]
+name = "mastra-worker"
+
+# KV 存储配置
+# [[kv_namespaces]]
+# binding = "MASTRA_MEMORY"
+# id = "your-kv-namespace-id"  # 需要替换为实际的 KV namespace ID
