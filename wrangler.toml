@@ -1,0 +1,6 @@
+name = "mastra-worker"
+main = ".mastra/output/index.mjs"
+compatibility_date = "2025-08-21"
+compatibility_flags = ["nodejs_compat", "nodejs_compat_populate_process_env"]
+[build]
+command = "npm run build"
