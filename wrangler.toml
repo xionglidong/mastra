@@ -1,4 +1,4 @@
-name = "mastra-worker"
+name = "mastra-agent"
 main = ".mastra/output/index.mjs"
 compatibility_date = "2025-08-21"
 compatibility_flags = ["nodejs_compat", "nodejs_compat_populate_process_env"]
@@ -9,7 +9,7 @@ command = "npm run build"
 watch_dir = ".mastra/output"
 
 [env.production]
-name = "mastra-worker"
+name = "mastra-agent"
 
 # KV 存储配置
 # [[kv_namespaces]]
